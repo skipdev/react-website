@@ -15,6 +15,11 @@ i {
     color: #3a3a3a;
 }
 
+::selection {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+::-moz-selection {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+
 .flex {
     display: flex;
 }
