@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class HomePage extends Component {
 	myName = 'Stephy'
 
-	  componentWillMount() {
+	  componentDidMount() {
 	    console.log('Render')
 	  }
 
