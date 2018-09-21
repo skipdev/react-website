@@ -15,6 +15,10 @@ i {
     color: #3a3a3a;
 }
 
+.flex {
+    display: flex;
+}
+
 #top {
     float: right;
     margin-left: 10%;
