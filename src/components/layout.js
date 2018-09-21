@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Header from './header'
 import { StaticQuery, graphql } from 'gatsby'
 import './main.css'
+import './style.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,6 +28,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        <Header
+         siteTitle={data.site.siteMetadata.title}
+        />
         <div
           style={{
             margin: '0 auto',
@@ -38,7 +43,7 @@ const Layout = ({ children }) => (
         </div>
         <div className="sidebar">
           {/*<div id="particles-js"></div>*/}
-          <img alt="Logo" id="menu" src="imgs/menu-icon.png"></img>
+          <img alt="Logo" id="menu" src={require('../images/menu-icon.png')}></img>
 
           <img alt="profile" id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
           </img>
@@ -46,7 +51,7 @@ const Layout = ({ children }) => (
           <p><b>Stephy</b></p>
           <br></br>
           <nav className="menu">
-            <a><img alt="x" src="imgs/x.png"></img></a>
+            <a><img alt="x" src={require('../images/x.png')}></img></a>
             <br></br>
             <br></br>
           </nav>
