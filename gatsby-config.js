@@ -7,13 +7,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'StephyX Web',
+        short_name: 'StephyX',
         start_url: '/',
         background_color: '#38cdff',
         theme_color: '#38cdff',
         display: 'minimal-ui',
-        icon: 'src/images/x.png', // This path is relative to the root of the site.
+        icon: 'src/images/x-blue.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
