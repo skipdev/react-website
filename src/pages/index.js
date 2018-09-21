@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
-
+import Sidebar from '../components/sidebar'
 import Layout from '../components/layout'
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/about/">Go to about page</Link>
-    <br></br>
-    <Link to="/experience/">Go to experiences</Link>
-    <br></br>
-    <Link to="/portfolio/">Go to portfolio</Link>
-    <br></br>
-    <Link to="/contact/">Go to contact</Link>
-  </Layout>
-)
+class HomePage extends Component {
+  // myName = 'Stephy'
 
-export default IndexPage
+  componentDidMount() {
+    console.log('Render')
+  }
+
+  render() {
+    return (
+      <Layout>
+        <p>helloo its the home page</p>
+      </Layout>
+    )
+  }
+}
+export default HomePage;
+

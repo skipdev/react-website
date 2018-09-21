@@ -1,0 +1,157 @@
+body {
+    font-family: 'Muli', sans-serif;
+    margin-top: -5px;
+}
+
+hr {
+    width: 70%;
+    border-radius: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+i {
+    font-size: 15px;
+    color: #3a3a3a;
+}
+
+#top {
+    float: right;
+    margin-left: 10%;
+    left: 0;
+}
+
+#top p {
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Sidebar */
+wrapper {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #38cdff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    order: 1;
+    height: 100%;
+    min-height: 100vh;
+    width: 45vw;
+    z-index: 1;
+    transform: translateX(-3%);
+}
+
+.sidebar * {
+    min-height: 15%;
+}
+
+.sidebar #menu {
+    width: 12%;
+    order: 0;
+    margin-left: 3vw;
+    align-self: flex-start;
+    padding-bottom: 3%;
+}
+
+.sidebar #profile_img {
+    order: 1;
+    width: 60%;
+    margin-bottom: 12%;
+    border-radius: 100%;
+}
+
+.sidebar p {
+    order: 2;
+    min-height: 5%;
+    font-size: 38px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar .menu {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 70%;
+    color: white;
+    transform: rotate(30deg);
+
+}
+
+.sidebar a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    color: lightgrey;
+}
+
+.sidebar ul {
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 0;
+    margin-top: 20%;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    margin: 5%
+}
+
+.sidebar hr {
+    align-self: center;
+}
+
+.main {
+    font-size: 20px;
+    order: 2;
+    margin-right: 2%;
+    padding: 15px;
+    margin-left: 5%;
+    width: 88%;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.title {
+    text-align: right;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#about {
+    padding-top: 5%;
+    text-align: right;
+}
+
+.main hr {
+    text-align: right;
+    margin-left: 40%;
+}
+
+#particles-js {
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
