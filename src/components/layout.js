@@ -42,6 +42,11 @@ class Layout extends React.Component {
                 { name: 'keywords', content: 'web development, stephyx, steph barden, southampton web design, southampton website, web design' },
               ]}
             />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+                  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+                  crossOrigin="anonymous"></link>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></link>
             <div className='flex'>
               <div className="sidebar flex column">
                 <div id="particles-js">
@@ -165,7 +170,6 @@ class Layout extends React.Component {
                   />
                 </div>
                 <img alt="menu icon" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
-
                 <img alt="a drawing of me" id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
                 </img>
                 <br></br>
@@ -184,8 +188,7 @@ class Layout extends React.Component {
                   </li>
                   <li><a href="https://frozenfanta.deviantart.com/"><i className="fab fa-deviantart fa-2x"></i></a></li>
                 </ul>
-
-                <div className={`menu-div ${this.state.sidebarOpen ? '' : 'hidden'}`} id='menu-div'>
+                <div className={`menu-div ${this.state.sidebarOpen ? '' : 'hidden'}`} id='menu-div' onClick={this.toggleMenu}>
                   <div className="navbar flex column">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
