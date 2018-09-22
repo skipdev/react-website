@@ -57,7 +57,7 @@ i:hover {
     background-color: black;
     height: 102vh;
     z-index: 1000;
-    opacity: 0.9;
+    opacity: 0.7;
     width: 101vw;
     position: fixed;
     justify-content: center;
@@ -198,3 +198,11 @@ i:hover {
     width: 100vw;
     overflow: hidden;
 }
+
+canvas {
+    position:absolute;
+    top:0;
+    left:0
+}
+
+#stars-js{ position:absolute; width: 100%; height: 100%; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }
