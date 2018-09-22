@@ -15,13 +15,27 @@ i {
     color: #3a3a3a;
 }
 
+.hidden {
+    display: none;
+}
+
 ::selection {
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
 ::-moz-selection {
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
 
 .flex {
     display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
 }
 
 #top {
@@ -35,15 +49,37 @@ i {
     text-align: right;
 }
 
-/* Sidebar */
-wrapper {
-    display: flex;
+.menu-div {
+    background-color: black;
+    height: 100vh;
+    z-index: 1000;
+    opacity: 0.8;
+    width: 101vw;
+    position: fixed;
+    justify-content: center;
+    left: 0;
 }
 
+.navbar {
+    align-items: center;
+    height: 100vh;
+    width: 30vw;
+    position: fixed;
+    justify-content: center;
+    left: 38vw;
+    top: 1vh;
+}
+
+    .navbar a {
+        font-size: 55px !important;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        margin-top: -1vh;
+        margin-bottom: -1vh;
+    }
+
+/* Sidebar */
 .sidebar {
     background-color: #38cdff;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -59,8 +95,9 @@ wrapper {
     min-height: 15%;
 }
 
-.sidebar #menu {
-    width: 12%;
+.sidebar #menu-button {
+    z-index: 100000;
+    width: 15%;
     order: 0;
     margin-left: 3vw;
     align-self: flex-start;
@@ -82,16 +119,14 @@ wrapper {
     color: white;
 }
 
-.sidebar .menu {
+.sidebar .x {
     order: 3;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 60%;
     justify-content: space-between;
 }
 
-.menu img {
+.x img {
     width: 70%;
     color: white;
 
@@ -110,8 +145,6 @@ wrapper {
 
 .sidebar ul {
     order: 4;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 70%;

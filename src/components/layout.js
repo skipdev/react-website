@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Particles from 'react-particles-js';
+import Particles from 'react-particles-js'
+import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
+import './menu.js'
 import './main.css'
 import './style.css'
 
@@ -34,7 +36,7 @@ const Layout = ({ children }) => (
           <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         </Helmet>
         <div className='flex'>
-          <div className="sidebar">
+          <div className="sidebar flex column">
             <div id="particles-js">
               <Particles
                 params={{
@@ -155,19 +157,19 @@ const Layout = ({ children }) => (
                 }}
               />
             </div>
-            <img alt="menu icon" id="menu" src={require('../images/menu-icon.png')}></img>
+            <img alt="menu icon" id="menu-button" src={require('../images/menu-icon.png')} onClick={toggleMenu()}></img>
 
-            <img alt="profile picture" id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
+            <img alt="a drawing of me" id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
             </img>
             <br></br>
             <p><b>Stephy</b></p>
             <br></br>
-            <nav className="menu">
+            <nav className="x flex row">
               <a><img alt="letter x" src={require('../images/x.png')}></img></a>
               <br></br>
               <br></br>
             </nav>
-            <ul>
+            <ul className="flex row">
               <li><a href="https://www.twitter.com/st3phyx_x"><i className="fab fa-twitter fa-2x"></i></a></li>
               <li><a href="https://github.com/stephyx/"><i className="fab fa-github fa-2x"></i></a>
               </li>
@@ -175,6 +177,16 @@ const Layout = ({ children }) => (
               </li>
               <li><a href="https://frozenfanta.deviantart.com/"><i className="fab fa-deviantart fa-2x"></i></a></li>
             </ul>
+
+            <div className="menu-div hidden" id='menu-div'>
+              <div className="navbar flex column">
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/experience">Experience</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/contact">Contact</Link>
+              </div>
+            </div>
           </div>
             {children}
         </div>

@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
 
-const ThirdPage = () => (
-  <Layout>
-    <h1>Hi from the experience page</h1>
-    <p>Welcome to experiences</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+class ExperiencePage extends Component {
+  render() {
+    return (
+      <Layout>
+        <div className="main">
+          <div id="top">
+            <p></p>
+          </div>
+          <div id="about">
+            <p className="title">Experiences</p>
+            <br></br>
+            <br></br>
+            <p>Timeline of my experiences</p>
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+}
+export default ExperiencePage;
 
-export default ThirdPage

@@ -3,10 +3,9 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 class HomePage extends Component {
-  // myName = 'Stephy'
 
   componentDidMount() {
-    console.log('Render')
+    console.log('mount')
   }
 
   render() {
