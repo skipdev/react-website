@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import SidebarTop from '../components/sidebar-top.js'
+import Footer from '../components/footer.js'
 import '../components/sidebar-top.css'
+import '../components/footer.css'
 
 class PortfolioPage extends Component {
   render() {
@@ -20,6 +22,7 @@ class PortfolioPage extends Component {
             <p>Waddup, it's the portfolio page!</p>
           </div>
         </div>
+          <Footer/>
         </div>
       </Layout>
     )

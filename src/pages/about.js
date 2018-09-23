@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import SidebarTop from '../components/sidebar-top.js'
+import Footer from '../components/footer.js'
 import '../components/sidebar-top.css'
+import '../components/footer.css'
 
 class AboutPage extends Component {
   state = {
@@ -28,6 +30,7 @@ class AboutPage extends Component {
               <p>Writing about me and why I love web stuff ^_^</p>
             </div>
           </div>
+          <Footer/>
         </div>
       </Layout>
     )

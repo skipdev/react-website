@@ -1,36 +1,21 @@
 /* Sidebar */
-.sidebar-top {
-    flex-direction: column;
+.footer {
+    flex-direction: row;
+    position: fixed;
     background-color: #38cdff;
     justify-content: space-evenly;
     align-items: center;
-    align-content: center;
-    order: 1;
-    min-height: 20vh;
+    order: 3;
+    max-height: 10vh;
+    min-height: 5vh;
     width: 105vw;
+    bottom: 0;
     z-index: 1;
     -webkit-transform: translateX(-3%);
     transform: translateX(-3%);
 }
 
-.sidebar-top * {
-}
-
-.sidebar-top .menu-button-top {
-    z-index: 100000;
-    width: 7%;
-    order: 0;
-    margin-left: 5vw;
-    margin-top: 2vh;
-    align-self: flex-start;
-    margin-bottom: 0vh;
-}
-
-.sidebar-top .profile_img-top {
-    display: none;
-}
-
-.sidebar-top p {
+.footer p {
     order: 2;
     min-height: 5%;
     font-size: 35px;
@@ -38,21 +23,12 @@
     color: white;
 }
 
-.sidebar-top .x {
-    display: block;
-    order: 3;
-    flex-wrap: wrap;
-    width: 70%;
-    justify-content: space-between;
+.footer .x {
+    width: 20vh;
+    margin-top: 2vh;
 }
 
-.x img {
-    width: 70%;
-    color: white;
-
-}
-
-.sidebar-top a {
+.footer a {
     display: block;
     font-size: 20px;
     text-align: center;
@@ -60,23 +36,27 @@
     color: white;
 }
 
-.sidebar-top a:hover {
+.footer a:hover {
     color: #aaaaaa;
 }
 
-.sidebar-top ul {
+.footer ul {
     order: 4;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     padding-left: 0;
 }
 
-.sidebar-top ul li {
+.footer ul li {
     list-style-type: none;
-    margin: 5%;
+    margin: 5% 5% 5% 0;
 }
 
-.sidebar-top hr {
+.footer i {
+    font-size: 1.5em;
+}
+
+.footer hr {
     align-self: center;
 }

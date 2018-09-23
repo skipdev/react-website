@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
 import SidebarTop from '../components/sidebar-top.js'
+import Footer from '../components/footer.js'
 import '../components/sidebar-top.css'
+import '../components/footer.css'
 
 class ContactPage extends Component {
   render() {
@@ -20,6 +22,7 @@ class ContactPage extends Component {
             <p>Contact form here! :)</p>
           </div>
         </div>
+          <Footer/>
         </div>
       </Layout>
     )
