@@ -10,7 +10,7 @@ class ContactPage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop/>
+          <SidebarTop pageTitle={'Contact'}/>
         <div className="main">
           <div id="top">
             <p></p>

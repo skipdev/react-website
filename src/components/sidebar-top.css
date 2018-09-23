@@ -15,7 +15,7 @@
 
 .sidebar-top .menu-button-top {
     z-index: 100000;
-    width: 7%;
+    width: 4%;
     order: 0;
     margin-left: 5vw;
     align-self: flex-start;
@@ -23,14 +23,6 @@
 
 .sidebar-top .profile_img-top {
     display: none;
-}
-
-.sidebar-top p {
-    order: 2;
-    min-height: 5%;
-    font-size: 35px;
-    text-align: center;
-    color: white;
 }
 
 .sidebar-top .x-top {
@@ -63,4 +55,13 @@
     justify-content: center;
     left: 3vw;
     top: 0vh;
+}
+
+.top-text {
+    order: 2;
+    min-height: 5%;
+    font-size: 4em;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: white;
 }

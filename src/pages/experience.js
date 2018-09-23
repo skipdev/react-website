@@ -10,7 +10,7 @@ class ExperiencePage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop/>
+          <SidebarTop pageTitle={'Experience'}/>
         <div className="main">
           <div id="top">
             <p></p>

@@ -101,6 +101,10 @@ i:hover {
     text-align: right;
 }
 
+.main {
+    margin-bottom: 15vh;
+}
+
 .main hr {
     text-align: right;
     margin-left: 40%;

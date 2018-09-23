@@ -18,7 +18,7 @@ class AboutPage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop/>
+          <SidebarTop pageTitle={'About'}/>
           <div className="main">
             <div id="top">
               <p></p>

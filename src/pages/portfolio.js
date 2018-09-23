@@ -10,7 +10,7 @@ class PortfolioPage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop/>
+          <SidebarTop pageTitle={'Portfolio'}/>
         <div className="main">
           <div id="top">
             <p></p>
