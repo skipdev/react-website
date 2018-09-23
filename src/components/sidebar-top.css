@@ -1,0 +1,66 @@
+/* Sidebar */
+.sidebar-top {
+    flex-direction: column;
+    background-color: #38cdff;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    order: 1;
+    min-height: 28vh;
+    width: 105vw;
+    z-index: 1;
+    -webkit-transform: translateX(-3%);
+    transform: translateX(-3%);
+}
+
+.sidebar-top .menu-button-top {
+    z-index: 100000;
+    width: 7%;
+    order: 0;
+    margin-left: 5vw;
+    align-self: flex-start;
+}
+
+.sidebar-top .profile_img-top {
+    display: none;
+}
+
+.sidebar-top p {
+    order: 2;
+    min-height: 5%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar-top .x-top {
+    display: none;
+}
+
+.sidebar-top a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-top a:hover {
+    color: #aaaaaa;
+}
+
+.sidebar-top .logos-top {
+    display: none;
+}
+
+.menu-div-top {
+    background-color: black;
+    height: 102vh;
+    z-index: 1000;
+    opacity: 0.88;
+    width: 101vw;
+    position: fixed;
+    justify-content: center;
+    left: 3vw;
+    top: 0vh;
+}

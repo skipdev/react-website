@@ -1,0 +1,82 @@
+/* Sidebar */
+.sidebar-top {
+    flex-direction: column;
+    background-color: #38cdff;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    order: 1;
+    min-height: 20vh;
+    width: 105vw;
+    z-index: 1;
+    -webkit-transform: translateX(-3%);
+    transform: translateX(-3%);
+}
+
+.sidebar-top * {
+}
+
+.sidebar-top .menu-button-top {
+    z-index: 100000;
+    width: 7%;
+    order: 0;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    align-self: flex-start;
+    margin-bottom: 0vh;
+}
+
+.sidebar-top .profile_img-top {
+    display: none;
+}
+
+.sidebar-top p {
+    order: 2;
+    min-height: 5%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar-top .x {
+    display: block;
+    order: 3;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.x img {
+    width: 70%;
+    color: white;
+
+}
+
+.sidebar-top a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-top a:hover {
+    color: #aaaaaa;
+}
+
+.sidebar-top ul {
+    order: 4;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 0;
+}
+
+.sidebar-top ul li {
+    list-style-type: none;
+    margin: 5%;
+}
+
+.sidebar-top hr {
+    align-self: center;
+}

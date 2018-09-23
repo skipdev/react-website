@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import SidebarTop from '../components/sidebar-top.js'
+import '../components/sidebar-top.css'
 
 class PortfolioPage extends Component {
   render() {
     return (
       <Layout>
+        <div className='wrapper flex column'>
+          <SidebarTop/>
         <div className="main">
           <div id="top">
             <p></p>
@@ -16,6 +19,7 @@ class PortfolioPage extends Component {
             <br></br>
             <p>Waddup, it's the portfolio page!</p>
           </div>
+        </div>
         </div>
       </Layout>
     )
