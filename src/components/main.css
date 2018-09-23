@@ -42,6 +42,20 @@ i:hover {
     flex-direction: row;
 }
 
+.index-name {
+    font-family: 'Gochi Hand', cursive;
+    order: 1;
+    font-size: 1.7em;
+}
+
+.profile_img {
+    border-radius: 50%;
+    z-index: 0;
+    width: 20%;
+    top: 7vh;
+    left: 36vw;
+}
+
 #top {
     float: right;
     margin-left: 10%;
@@ -59,7 +73,7 @@ i:hover {
     width: 30vw;
     position: fixed;
     justify-content: center;
-    left: 36vw;
+    left: 38vw;
     top: 1vh;
 }
 
@@ -80,6 +94,10 @@ i:hover {
     position: relative;
     overflow: hidden;
     background-color: transparent;
+}
+
+.main-index {
+    margin-top: 7vh;
 }
 
 .title {
@@ -112,8 +130,6 @@ i:hover {
 
 #particles-js {
     z-index: -100;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -123,4 +139,4 @@ canvas {
     left:0
 }
 
-#stars-js{ position:absolute; width: 100%; height: 100%; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }
+#stars-js{ position:absolute; width: 100%; height: 100%; margin-left: 2vw; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }

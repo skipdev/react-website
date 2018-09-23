@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import SidebarTop from '../components/sidebar-top.js'
-import Footer from '../components/footer.js'
-import '../components/sidebar-top.css'
-import '../components/footer.css'
+import Sidebar from '../components/sidebar.js'
+import '../components/sidebar.css'
 
 class ExperiencePage extends Component {
   render() {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop pageTitle={'Experience'}/>
+          <Sidebar pageTitle={'Experience'}/>
         <div className="main">
           <div id="top">
             <p></p>
@@ -30,7 +28,6 @@ class ExperiencePage extends Component {
               Vestibulum lectus eros, sodales pretium rutrum nec, volutpat ut enim. Donec cursus felis quis tellus tempor tincidunt. Aenean sodales a erat in blandit. Phasellus quam lacus, sollicitudin vel placerat vel, vehicula vitae ipsum. Nulla sodales ornare ipsum, ac porttitor sem interdum eu. Ut sagittis mi eget justo sodales tempor. In euismod sodales augue nec mattis. Aliquam ex velit, tincidunt a lectus eget, pretium sodales purus. Donec tempus id mauris sagittis maximus. Morbi volutpat ultrices massa, in imperdiet nulla accumsan ut. Aliquam erat volutpat. Vestibulum sit amet nibh ut leo rutrum dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer feugiat tincidunt elit, eu pharetra dui vehicula id. Curabitur aliquam justo a nisl malesuada laoreet ac a velit. Curabitur at nibh neque.</p>
           </div>
         </div>
-          <Footer/>
         </div>
       </Layout>
     )

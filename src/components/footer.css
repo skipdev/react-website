@@ -16,17 +16,25 @@
 }
 
 .footer p {
-    order: 2;
-    min-height: 5%;
-    font-size: 35px;
-    text-align: center;
+    font-family: 'Gochi Hand', cursive;
     color: white;
 }
 
+.name {
+    order: 1;
+    font-size: 3em;
+    margin-left: 5vw;
+}
+
+.copyright {
+    order: 3;
+    font-size: 1em;
+}
+
 .footer .x {
+    order: 2;
     width: 15vh;
     margin-top: 1.5vh;
-    margin-left: 2vw;
 }
 
 .footer a {

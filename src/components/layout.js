@@ -2,8 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Footer from '../components/footer.js'
 import './main.css'
 import './style.css'
+import './sidebar.css'
+import './footer.css'
 
 class Layout extends React.Component {
 
@@ -36,9 +39,11 @@ class Layout extends React.Component {
                   crossOrigin="anonymous"></link>
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"></link>
             <div>
               {children}
             </div>
+            <Footer/>
           </>
         )}
       />

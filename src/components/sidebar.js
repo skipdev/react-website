@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Particles from 'react-particles-js'
 
-class SidebarTop extends Component {
+class Sidebar extends Component {
 
   state = {
     sidebarOpen: false,
@@ -16,8 +16,9 @@ class SidebarTop extends Component {
 
   render() {
     const { pageTitle } = this.props
+    const { profileImg } = this.props
     return (
-        <div className="sidebar-top flex">
+        <div className="sidebar flex">
           <div id="particles-js">
             <Particles
               params={{
@@ -139,13 +140,12 @@ class SidebarTop extends Component {
             />
           </div>
           <img alt="menu icon" className="menu-button-top" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
-          <img alt="a drawing of me" class="profile_img-top" id="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4">
-          </img>
           <br></br>
           <p class="top-text"><b>{pageTitle}</b></p>
           <br></br>
           <nav className="x-top flex row">
             <a><img alt="letter x" src={require('../images/x.png')}></img></a>
+            {profileImg}
             <br></br>
             <br></br>
           </nav>
@@ -187,5 +187,5 @@ class SidebarTop extends Component {
   }
 }
 
-export default SidebarTop;
+export default Sidebar;
 

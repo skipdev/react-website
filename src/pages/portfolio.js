@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import Layout from '../components/layout'
-import SidebarTop from '../components/sidebar-top.js'
-import Footer from '../components/footer.js'
-import '../components/sidebar-top.css'
-import '../components/footer.css'
+import Sidebar from '../components/sidebar.js'
+import '../components/sidebar.css'
 
 class PortfolioPage extends Component {
   render() {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <SidebarTop pageTitle={'Portfolio'}/>
+          <Sidebar pageTitle={'Portfolio'}/>
         <div className="main">
           <div id="top">
             <p></p>
@@ -22,7 +20,6 @@ class PortfolioPage extends Component {
             <p>Waddup, it's the portfolio page!</p>
           </div>
         </div>
-          <Footer/>
         </div>
       </Layout>
     )
