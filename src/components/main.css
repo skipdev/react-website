@@ -30,6 +30,10 @@ i:hover {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+.vertical-timeline-element-title {
+    margin-top: -2.2vh !important;
+}
+
 .flex {
     display: flex;
 }
