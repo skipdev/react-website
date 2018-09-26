@@ -1,0 +1,40 @@
+.icon-img {
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.vertical-timeline::before {
+    background-color: #e3e3e3 !important;
+    border-radius: 25%;
+}
+
+.vertical-timeline-element-title {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1170px) {
+    .icon-img {
+        position: absolute;
+        top: 13%;
+        left: 13%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .icon-img {
+        position: absolute;
+        top: 18%;
+        left: 18%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}

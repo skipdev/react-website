@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Sidebar from '../components/sidebar.js'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import '../components/timeline.css'
 import '../components/sidebar.css'
 
 class ExperiencePage extends Component {
@@ -17,10 +18,10 @@ class ExperiencePage extends Component {
           </div>
             <VerticalTimeline>
               <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element--self-teaching"
                 date="September 2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<Icon/>}
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/react-logo.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title small-title">Self-Teaching</h3>
                 <h4 className="vertical-timeline-element-subtitle small-title">React.js / Gatsby.js</h4>
@@ -31,8 +32,8 @@ class ExperiencePage extends Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="September 2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
-                // icon={<Icon/>}
+                iconStyle={{ background: '#38cdff', color: '#fff'}}
+                icon=<img className='icon-img' src={require('../images/solent-logo.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title">2nd Year</h3>
                 <h4 className="vertical-timeline-element-subtitle">Solent University</h4>
@@ -43,8 +44,8 @@ class ExperiencePage extends Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="September 2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<Icon/>}
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/seo-icon.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">SEO Optimisation</h4>
@@ -55,8 +56,8 @@ class ExperiencePage extends Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="June - September 2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<Icon/>}
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/cube-logo.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title">Front-end Development</h3>
                 <h4 className="vertical-timeline-element-subtitle">3 SIDED CUBE</h4>
@@ -67,8 +68,8 @@ class ExperiencePage extends Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="May - June 2018"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<Icon/>}
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/website-icon.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">Bespoke Website - Garden Furniture</h4>
@@ -78,9 +79,9 @@ class ExperiencePage extends Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff'}}
-                // icon={<Icon/>}
+                date="May 2018"
+                iconStyle={{ background: '#38cdff', color: '#fff'}}
+                icon=<img className='icon-img' src={require('../images/css-logo.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title small-title">Self-Teaching</h3>
                 <h4 className="vertical-timeline-element-subtitle small-title">CSS Grid and Flexbox</h4>
@@ -90,9 +91,9 @@ class ExperiencePage extends Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                // icon={<Icon/>}
+                date="April 2018"
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/website-icon.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">Bespoke Website - Landscaping</h4>
@@ -102,44 +103,16 @@ class ExperiencePage extends Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<Icon/>}
+                date="September 2017"
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/solent-logo.png')}></img>
               >
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                <h3 className="vertical-timeline-element-title">Year 1</h3>
+                <h4 className="vertical-timeline-element-subtitle">Solent University</h4>
                 <p>
                   Strategy, Social Media
                 </p>
               </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<Icon/>}
-              >
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                // icon={<Icon/>}
-              >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                  Creative Direction, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                // icon={<Icon/>}
-              />
             </VerticalTimeline>
         </div>
         </div>
