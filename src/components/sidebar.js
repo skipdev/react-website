@@ -16,6 +16,7 @@ class Sidebar extends Component {
 
   render() {
     const { pageTitle } = this.props
+    const { letterX } = this.props
     const { profileImg } = this.props
     return (
         <div className="sidebar flex">
@@ -141,10 +142,12 @@ class Sidebar extends Component {
           </div>
           <img alt="menu icon" className="menu-button-top" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
           <br></br>
-          <p class="top-text"><b>{pageTitle}</b></p>
+          <div className="flex row stephyx">
+            <p className="top-text"><b>{pageTitle}</b></p>
+            <p className="top-text"><b>{letterX}</b></p>
+          </div>
           <br></br>
           <nav className="x-top flex row">
-            <a><img alt="letter x" src={require('../images/x.png')}></img></a>
             {profileImg}
             <br></br>
             <br></br>

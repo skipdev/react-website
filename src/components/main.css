@@ -1,6 +1,10 @@
+html, body {
+    margin-top: -1vh !important;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Muli', sans-serif;
-    margin-top: -5px;
 }
 
 hr {
@@ -46,10 +50,28 @@ i:hover {
     flex-direction: row;
 }
 
+.wrapper {
+    margin-bottom: -17vh;
+    margin-left: -2.5vw;
+}
+
+.stephyx {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+}
+
 .index-name {
     font-family: 'Gochi Hand', cursive;
+    font-weight: lighter;
     order: 1;
-    font-size: 1.7em;
+    font-size: 1em;
+}
+
+.x {
+    height: 13vh;
+    margin-top: 1vh;
 }
 
 .profile_img {
@@ -69,23 +91,6 @@ i:hover {
 #top p {
     font-size: 14px;
     text-align: right;
-}
-
-.navbar {
-    align-items: center;
-    height: 100vh;
-    width: 30vw;
-    position: fixed;
-    justify-content: center;
-    left: 38vw;
-    top: 1vh;
-}
-
-.navbar a {
-    font-size: 55px !important;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
 }
 
 .main {
@@ -120,6 +125,8 @@ i:hover {
 
 #about {
     padding-top: 5%;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
     text-align: right;
 }
 
@@ -143,4 +150,4 @@ canvas {
     left:0
 }
 
-#stars-js{ position:absolute; width: 100%; height: 100%; margin-left: 2vw; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }
+#stars-js{ position:absolute; width: 100%; height: 100%; margin-left: -3vw; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }
