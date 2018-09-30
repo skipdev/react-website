@@ -143,7 +143,7 @@ class Sidebar extends Component {
           <img alt="menu icon" className="menu-button-top" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
           <br></br>
           <div className="flex row stephyx">
-            <p className="top-text"><b>{pageTitle}</b></p>
+            <p className="top-text">{pageTitle}</p>
             <p className="top-text"><b>{letterX}</b></p>
           </div>
           <br></br>
@@ -181,7 +181,7 @@ class Sidebar extends Component {
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/experience">Experience</Link>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/work">Work</Link>
               <Link to="/contact">Contact</Link>
             </div>
           </div>

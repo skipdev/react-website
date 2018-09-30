@@ -11,14 +11,15 @@
     min-height: 28vh;
     width: 105vw;
     z-index: 1;
+    margin-top: -3vh;
 }
 
 .sidebar .menu-button-top {
     z-index: 100000;
     width: 12%;
     order: 0;
-    margin-top: 1vh;
-    margin-left: 5vw;
+    margin-top: 2.5vh;
+    margin-left: 6vw;
     align-self: flex-start;
 }
 
@@ -72,11 +73,12 @@
 }
 
 .top-text {
+    font-family: 'Muli', sans-serif;
     order: 2;
     min-height: 5%;
-    font-size: 3em;
-    margin-right: 1vw;
-    margin-bottom: 4vh;
+    font-size: 3.3em;
+    margin-right: 2.2vw;
+    margin-top: -2vh;
     text-align: center;
     color: white;
 }
@@ -88,7 +90,8 @@
         border-bottom-right-radius: 0;
     }
     .navbar {
-        left: 36vw;
+        left: 33vw;
+        margin-top: 10vh;
         align-items: center;
     }
     .navbar a {
@@ -103,8 +106,8 @@
         margin-bottom: 5vh;
     }
     .sidebar .menu-button-top {
-        width: 6%;
-        margin-top: 3vh;
+        width: 5.5%;
+        margin-top: 6vh;
         margin-left: 4vw;
     }
 }

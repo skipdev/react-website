@@ -1,0 +1,45 @@
+.stephyx {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.index-title {
+    margin-bottom: -5vh;
+    margin-top: -4vh;
+    padding-bottom: 2vh;
+}
+
+.index-name {
+    font-family: 'Gochi Hand', cursive;
+    font-weight: lighter;
+    order: 1;
+    font-size: 1.8em;
+}
+
+.index-x {
+    height: 20vh;
+    margin-left: -4vw;
+}
+
+.profile_img {
+    border-radius: 50%;
+    z-index: 0;
+    width: 20%;
+    top: 7vh;
+    left: 36vw;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .index-name {
+        order: 1;
+        font-size: 1.2em;
+    }
+
+    .index-x {
+        height: 13vh;
+        margin-top: -1.5vh;
+    }
+}
