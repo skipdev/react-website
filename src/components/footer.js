@@ -8,8 +8,8 @@ class Footer extends Component {
         <div className="footer flex">
           <p class="name">Stephy</p>
           <img className="x" alt="letter x" src={require('../images/x.png')}></img>
+          <p className="copyright"> © 2018 All rights reserved.</p>
           <div className='mobile flex'>
-            <p className="copyright"> © 2018 All rights reserved.</p>
             <ul className="icons flex row">
               <li><a href="https://www.twitter.com/st3phyx_x"><i className="fab fa-twitter fa-2x"></i></a></li>
               <li><a href="https://github.com/stephyx/"><i className="fab fa-github fa-2x"></i></a>

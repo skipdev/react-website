@@ -6,7 +6,6 @@
     justify-content: space-evenly;
     align-items: center;
     order: 3;
-    max-height: 8vh;
     min-height: 5vh;
     width: 105vw;
     z-index: 1;
@@ -25,14 +24,14 @@
 
 .name {
     order: 1;
-    font-size: 3em;
+    font-size: 5em;
     padding-left: 2vw;
 }
 
 .copyright {
     order: 3;
     margin-top: 2px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .footer .x {
@@ -68,11 +67,37 @@
 }
 
 .footer i {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .footer hr {
     align-self: center;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .name {
+        order: 1;
+        margin-left: -15vw;
+    }
+    .x {
+        order: 2;
+        margin-left: -15vw;
+    }
+    .mobile {
+        order: 4;
+     }
+    .copyright {
+        order: 3;
+        margin-left: -15vw;
+    }
+    .footer ul {
+        margin-right: -10vw;
+        width: 30vw;
+    }
+    .footer ul li {
+        margin-left: 1vw;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -82,7 +107,7 @@
         border-top-right-radius: 10px;
         order: 4;
         padding-top: 5vh;
-        max-height: 10vh;
+        max-height: 8vh;
         min-height: 5vh;
         width: 100vw;
         z-index: 1;
@@ -113,7 +138,6 @@
     }
 
     .footer .x {
-        margin-left: -3vw;
         margin-right: -3vw;
         width: 15vh;
     }
@@ -124,13 +148,18 @@
     }
 
     .copyright {
-        margin-top: .5vh;
+        margin-top: 1vh;
+        font-size: 1em;
         order: 2;
+    }
+
+    .footer i {
+        font-size: 1.5em;
     }
 
     .footer ul {
         order: 1;
-        margin-bottom: 2vh;
+        margin-left: -6vw;
     }
 
     .footer ul li {

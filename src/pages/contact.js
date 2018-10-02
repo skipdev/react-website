@@ -16,12 +16,12 @@ class ContactPage extends Component {
           <div className="main">
           <h1 class="contact-title dark">Get in touch!</h1>
           <div id="about">
-            <form action="" className="contact-form-all flex column" method="post">
+            <form action="../components/contact.php" className="contact-form-all flex column" method="post">
               <div className="contact-form flex">
                 <div className="left flex column">
-                  <span className="contact-label">Name</span>
+                  <span className="contact-label contact-label-name">Name</span>
                   <input type="text" name="contact-name" className="contact-name" placeholder="Enter your name"></input>
-                  <span className="contact-label">Email</span>
+                  <span className="contact-label contact-label-email">Email</span>
                   <input type="text" name="contact-email" className="contact-email" placeholder="Enter your email"></input>
                 </div>
                 <div className="right flex column">

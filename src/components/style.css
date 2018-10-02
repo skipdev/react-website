@@ -14,7 +14,16 @@ del{text-decoration:line-through}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
+input,select,textarea {vertical-align:middle;
+    margin-bottom: 5vh;
+    padding-right: 20vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.75vh;
+font-family: 'Quicksand', sans-serif;
+font-size: 1em;
+color: #4a4a4a;
+font-weight: lighter;}
+textarea{padding-bottom: 15vh;}
 li{list-style:none}
 
 
