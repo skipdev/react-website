@@ -7,8 +7,11 @@ class HomePage extends Component {
     return (
         <Layout>
           <div className='wrapper flex column'>
+            <div className="flex column sidebar-img">
             <Sidebar pageTitle={<p className='index-title index-name'>Stephy</p>} letterX={<img className="index-title index-x" alt="letter x" src={require('../images/x.png')}></img>}/>
-            <div className="main">
+            <img className="contact-img image" alt="contact-img" src={require('../images/profile_picture.png')}></img>
+            </div>
+              <div className="main">
               <div id="about">
                 <p className="title">Front-End Developer</p>
                 <br></br>

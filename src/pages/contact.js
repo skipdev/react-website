@@ -9,9 +9,12 @@ class ContactPage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
-          <Sidebar pageTitle={'Contact'}/>
-        <div className="main">
-            <h1 class="contact-title dark">Get in touch!</h1>
+          <div className="flex column sidebar-img">
+            <Sidebar pageTitle={'Contact'}/>
+            <img className="contact-img image" alt="contact-img" src={require('../images/profile_picture.png')}></img>
+          </div>
+          <div className="main">
+          <h1 class="contact-title dark">Get in touch!</h1>
           <div id="about">
             <form action="" className="contact-form-all flex column" method="post">
               <div className="contact-form flex">

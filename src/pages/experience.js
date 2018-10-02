@@ -11,8 +11,11 @@ class ExperiencePage extends Component {
     return (
       <Layout>
         <div className='wrapper flex column'>
+          <div className="flex column sidebar-img">
           <Sidebar pageTitle={'Experience'}/>
-        <div className="main">
+          <img className="contact-img image" alt="contact-img" src={require('../images/profile_picture.png')}></img>
+          </div>
+          <div className="main">
           <div id="top">
             <p></p>
           </div>

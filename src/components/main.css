@@ -1,5 +1,4 @@
 html, body {
-    margin-top: -1vh !important;
     overflow-x: hidden;
 }
 
@@ -67,6 +66,7 @@ i:hover {
 }
 
 .main {
+    margin-bottom: 15vh;
     font-size: 20px;
     order: 2;
     margin-right: 2%;
@@ -83,7 +83,7 @@ i:hover {
 }
 
 .title {
-    text-align: right;
+    text-align: center;
     margin-top: 3%;
     font-weight: bold;
     font-size: 40px;
@@ -112,16 +112,13 @@ i:hover {
     color: #0f0f0f;
 }
 
-.main {
-    margin-bottom: 15vh;
-}
-
 .main hr {
     text-align: right;
     margin-left: 40%;
 }
 
 #particles-js {
+    display: none;
     z-index: -100;
     overflow: hidden;
 }
@@ -131,7 +128,7 @@ canvas {
     top:0;
     left:0;
     width: 100vw !important;
-    height: 25vh !important;
+    height: 100vh !important;
 }
 
 #stars-js{ position:absolute; padding-bottom: 100vw !important; z-index: 0; width: 100vw; height: 100vh; margin-left: -3vw; background-color: black;  background-repeat: no-repeat; background-size: 20%; background-position: 50% 50%; }

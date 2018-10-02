@@ -41,6 +41,7 @@ class Layout extends React.Component {
                   crossOrigin="anonymous"></link>
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></link>
+            <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"></link>
             <div>
               {children}

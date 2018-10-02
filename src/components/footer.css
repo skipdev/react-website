@@ -1,7 +1,7 @@
 /* Sidebar */
 .footer {
     flex-direction: row;
-    position: fixed;
+    position: inherit;
     background-color: #38cdff;
     justify-content: space-evenly;
     align-items: center;
@@ -13,6 +13,9 @@
     left: 0;
     bottom: 0;
     height: 100%;
+    -webkit-box-shadow: 0px -1px 5px rgba(190,190,190,0.7);
+    -moz-box-shadow: 0px -1px 5px rgba(190,190,190,0.7);
+    box-shadow: 0px -1px 5px rgba(190,190,190,0.7);
 }
 
 .footer p {
@@ -75,43 +78,62 @@
 @media only screen and (max-width: 700px) {
 
     .footer {
-        flex-direction: row;
-        position: fixed;
-        background-color: #38cdff;
-        justify-content: space-evenly;
-        align-items: center;
-        border-top-left-radius: 2%;
-        border-top-right-radius: 10%;
-        order: 3;
-        max-height: 8vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        order: 4;
+        padding-top: 5vh;
+        max-height: 10vh;
         min-height: 5vh;
-        width: 105vw;
+        width: 100vw;
         z-index: 1;
         left: 0;
         bottom: 0;
+        margin-bottom: -10vh;
         height: 100%;
     }
 
     .mobile-circle {
         align-self: center;
+        position: relative;
+        order: 5;
         background-color: #38cdff;
-        position: inherit;
-        border-top-left-radius: 30%;
-        border-top-right-radius: 30%;
-        order: 3;
-        margin-bottom: -10vh;
-        margin-left: 3vw;
         height: 15vh;
         width: 105vw;
-        bottom: 0;
         z-index: 0;
         left: 0;
     }
 
-    .name, .copyright{
+    .name {
         display: none;
     }
+
+    .mobile {
+        order: 2;
+        flex-direction: column;
+    }
+
+    .footer .x {
+        margin-left: -3vw;
+        margin-right: -3vw;
+        width: 15vh;
+    }
+
+    .icons {
+        order: 1;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+        margin-top: .5vh;
+        order: 2;
+    }
+
+    .footer ul {
+        order: 1;
+        margin-bottom: 2vh;
+    }
+
     .footer ul li {
-        margin: 5% 12% 5% 0;
+        padding-left: 1vw;
     }
 }

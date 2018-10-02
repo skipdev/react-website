@@ -17,7 +17,7 @@ class Sidebar extends Component {
   render() {
     const { pageTitle } = this.props
     const { letterX } = this.props
-    const { profileImg } = this.props
+    const { pageImg } = this.props
     return (
         <div className="sidebar flex">
           <div id="particles-js">
@@ -140,26 +140,14 @@ class Sidebar extends Component {
               }}
             />
           </div>
-          <img alt="menu icon" className="menu-button-top" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
-          <br></br>
+          <div className="menu-bg menu-button-top"></div>
+            <img alt="menu icon" className="menu-button-top menu-button" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
+            <br></br>
           <div className="flex row stephyx">
             <p className="top-text">{pageTitle}</p>
             <p className="top-text"><b>{letterX}</b></p>
           </div>
           <br></br>
-          <nav className="x-top flex row">
-            {profileImg}
-            <br></br>
-            <br></br>
-          </nav>
-          <ul className="flex row logos-top">
-            <li><a href="https://www.twitter.com/st3phyx_x"><i className="fab fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://github.com/stephyx/"><i className="fab fa-github fa-2x"></i></a>
-            </li>
-            <li><a href="https://www.behance.net/stephyx"><i className="fab fa-behance fa-2x"></i></a>
-            </li>
-            <li><a href="https://frozenfanta.deviantart.com/"><i className="fab fa-deviantart fa-2x"></i></a></li>
-          </ul>
           <div className={`menu-div-top ${this.state.sidebarOpen ? '' : 'hidden'}`} id='menu-div' onClick={this.toggleMenu}>
             <div id="stars-js">
               <Particles
