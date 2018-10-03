@@ -14,5 +14,5 @@ export const contact = async (name, email, message) => {
 		name,
 		email,
 		message,
-	})
+	}, 'POST')
 }
