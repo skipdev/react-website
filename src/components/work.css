@@ -1,0 +1,29 @@
+.table {
+    align-content: center;
+    justify-content: center;
+}
+
+.work-img {
+    width: 40vw;
+    height: 40vw;
+    padding: 5px;
+}
+
+.work-text {
+    font-weight: bold;
+    margin-top: -6vh;
+    margin-left: 1vh;
+}
+
+#code {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding-right: 24.5vw;
+}
+
+#design {
+    margin-left: 3.1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding-right: 20.5vw;
+}

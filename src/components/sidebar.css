@@ -24,10 +24,6 @@
     order: 2;
 }
 
-.sidebar .x-top {
-    display: none;
-}
-
 .sidebar a {
     display: block;
     font-size: 20px;
@@ -41,13 +37,13 @@
 }
 
 .navbar {
+    font-weight: bold;
     align-items: flex-end;
     height: 100vh;
     width: 30vw;
     position: fixed;
     justify-content: center;
     left: 55vw;
-    top: -15vh;
 }
 
 .navbar a {
@@ -72,7 +68,7 @@
 .top-text {
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
-    order: 2;
+    order: 1;
     min-height: 5%;
     font-size: 3em;
     margin-right: 2.2vw;
@@ -90,9 +86,13 @@
     align-self: flex-start;
     margin-left: 6vw;
     margin-top: 2vh;
-    background-color: rgba(56,205,255,0.9);
     border-radius: 50%;
     padding: 10px;
+}
+
+.under {
+    background-color: rgba(56,205,255,0.9);
+    z-index: 1;
 }
 
 .image {
@@ -119,7 +119,7 @@
     }
     .navbar {
         left: 33vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
         align-items: center;
     }
     .navbar a {

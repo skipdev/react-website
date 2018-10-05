@@ -5,8 +5,10 @@ import { StaticQuery, graphql } from 'gatsby'
 import Footer from '../components/footer.js'
 import './main.css'
 import './index.css'
+import './work.css'
 import './contact.css'
 import './style.css'
+import './skills.css'
 import './sidebar.css'
 import './footer.css'
 
@@ -43,6 +45,7 @@ class Layout extends React.Component {
             <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"></link>
+            <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
             <div>
               {children}
             </div>
