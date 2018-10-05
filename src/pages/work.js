@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar.js'
 import '../components/sidebar.css'
-import ProPic from '../images/profile_picture.png'
 import Pic1 from '../images/work-coding.jpeg'
 import Pic2 from '../images/work-design.jpeg'
 
@@ -13,7 +12,7 @@ class PortfolioPage extends Component {
         <div className='wrapper flex column'>
           <div className="flex column sidebar-img">
           <Sidebar pageTitle={'Work'}/>
-          <img className="contact-img image" alt="profile picture" src={ProPic}></img>
+          <img className="contact-img image" alt="profile picture" src={require('../images/profile_picture.png')}></img>
           </div>
           <div className="main flex table column">
             <div id="about">
