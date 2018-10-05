@@ -20,7 +20,8 @@ class HomePage extends Component {
                   development.</p>
                   <br></br>
                   <p><b>Please note that this website is currently under development.</b></p>
-                  {/*<img alt="a drawing of me" className="profile_img" src="https://avatars0.githubusercontent.com/u/32325240?s=460&v=4"></img>*/}
+                  <br></br>
+                  <p><b>Currently learning: React.js</b></p>
               </div>
             </div>
           </div>

@@ -24,10 +24,6 @@
     order: 2;
 }
 
-.sidebar .x-top {
-    display: none;
-}
-
 .sidebar a {
     display: block;
     font-size: 20px;
@@ -41,13 +37,13 @@
 }
 
 .navbar {
+    font-weight: bold;
     align-items: flex-end;
     height: 100vh;
     width: 30vw;
     position: fixed;
     justify-content: center;
     left: 55vw;
-    top: -15vh;
 }
 
 .navbar a {
@@ -90,9 +86,13 @@
     align-self: flex-start;
     margin-left: 6vw;
     margin-top: 2vh;
-    background-color: rgba(56,205,255,0.9);
     border-radius: 50%;
     padding: 10px;
+}
+
+.under {
+    background-color: rgba(56,205,255,0.9);
+    z-index: 1;
 }
 
 .image {

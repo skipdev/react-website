@@ -22,14 +22,26 @@ class ExperiencePage extends Component {
             <VerticalTimeline>
               <VerticalTimelineElement
                 className="vertical-timeline-element--self-teaching"
-                date="September 2018"
+                date="October 2018"
+                iconStyle={{ background: '#38cdff', color: '#fff' }}
+                icon=<img className='icon-img' src={require('../images/talk-icon.png')}></img>
+              >
+              <h3 className="vertical-timeline-element-title small-title">Talk</h3>
+              <h4 className="vertical-timeline-element-subtitle small-title">Barcamp Southampton</h4>
+              <p className={'small-p'}>
+                A talk on 'Standing Out in the Digital Industry'
+              </p>
+            </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--self-teaching"
+                date="September - October 2018"
                 iconStyle={{ background: '#38cdff', color: '#fff' }}
                 icon=<img className='icon-img' src={require('../images/react-logo.png')}></img>
               >
                 <h3 className="vertical-timeline-element-title small-title">Self-Teaching</h3>
                 <h4 className="vertical-timeline-element-subtitle small-title">React.js / Gatsby.js</h4>
                 <p className={'small-p'}>
-                  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                  I spent some time teaching myself React.js, and re-created this website in it.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -41,7 +53,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">2nd Year</h3>
                 <h4 className="vertical-timeline-element-subtitle">Solent University</h4>
                 <p>
-                  Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                  Started my second year of university.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -53,7 +65,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">SEO Optimisation</h4>
                 <p>
-                  <a href="https://northhertsjoinery.com/">https://northhertsjoinery.com/</a>
+                  I was hired to optimise the following website: <a href="https://northhertsjoinery.com/">https://northhertsjoinery.com/</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -65,7 +77,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">Front-end Development</h3>
                 <h4 className="vertical-timeline-element-subtitle">3 SIDED CUBE</h4>
                 <p>
-                  User Experience, Visual Design
+                  I spent 3 months at 3 SIDED CUBE, working as an intern front-end developer.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -77,7 +89,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">Bespoke Website - Garden Furniture</h4>
                 <p>
-                  <a href="http://brdfurniture.co.uk/">http://brdfurniture.co.uk/</a>
+                  I was hired to create the following website: <a href="http://brdfurniture.co.uk/">http://brdfurniture.co.uk/</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -89,7 +101,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title small-title">Self-Teaching</h3>
                 <h4 className="vertical-timeline-element-subtitle small-title">CSS Grid and Flexbox</h4>
                 <p className={"small-p"}>
-                  User Experience, Visual Design
+                  Spent some time learning better layout techniques, such as CSS Grid and Flexbox.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -101,7 +113,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">Freelance Work</h3>
                 <h4 className="vertical-timeline-element-subtitle">Bespoke Website - Landscaping</h4>
                 <p>
-                  <a href="http://aberlandscaping.co.uk/">http://aberlandscaping.co.uk/</a>
+                  I was hired to create the following website: <a href="http://aberlandscaping.co.uk/">http://aberlandscaping.co.uk/</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -113,7 +125,7 @@ class ExperiencePage extends Component {
                 <h3 className="vertical-timeline-element-title">Year 1</h3>
                 <h4 className="vertical-timeline-element-subtitle">Solent University</h4>
                 <p>
-                  Strategy, Social Media
+                  Started my first year at university.
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>

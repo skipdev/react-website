@@ -17,7 +17,7 @@ render() {
               <p></p>
             </div>
             <div id="about">
-              <p><span class="dark">My name is Steph, and I'm a front-end developer, currently working part-time at 3 SIDED CUBE alongside studying Web Design and Development at Solent University.</span>
+              <p><span class="dark">My name is Skip, and I'm a front-end developer, currently studying Web Design and Development at Solent University.</span>
                 <br></br>
                 <br></br>
                 I am very passionate about <span class="dark">tech for good</span>, and creating technical solutions to problems that can have a big positive impact on people.
