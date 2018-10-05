@@ -3,8 +3,19 @@ import Layout from '../components/layout'
 import Sidebar from '../components/sidebar.js'
 import '../components/sidebar.css'
 // import '../components/contact-form'
+import { contact } from '../api'
 
 class ContactPage extends Component {
+  state = {
+    name: '',
+    email: '',
+    message: '',
+  }
+
+  submitForm = async () => {
+    await contact(this.state.name, this.state.email, this.state.message)
+  }
+
   render() {
     return (
       <Layout>
@@ -16,17 +27,17 @@ class ContactPage extends Component {
           <div className="main">
           <h1 class="contact-title dark">Get in touch!</h1>
           <div id="about">
-            <form action="../components/contact.php" className="contact-form-all flex column" method="post">
+            <form onSubmit={this.submitForm} className="contact-form-all flex column">
               <div className="contact-form flex">
                 <div className="left flex column">
-                  <span className="contact-label contact-label-name">Name</span>
-                  <input type="text" name="contact-name" className="contact-name" placeholder="Enter your name"></input>
-                  <span className="contact-label contact-label-email">Email</span>
-                  <input type="text" name="contact-email" className="contact-email" placeholder="Enter your email"></input>
+                  <span className="contact-label">Name</span>
+                  <input onKeyUp={(event) => this.setState({name: event.target.value})} type="text" name="contact-name" className="contact-name" placeholder="Enter your name"></input>
+                  <span className="contact-label">Email</span>
+                  <input onKeyUp={(event) => this.setState({email: event.target.value})} type="text" name="contact-email" className="contact-email" placeholder="Enter your email"></input>
                 </div>
                 <div className="right flex column">
                   <span className="contact-label contact-label-message">Message</span>
-                  <textarea name="contact-email" className="contact-message" placeholder="Enter your message"></textarea>
+                  <textarea onKeyUp={(event) => this.setState({message: event.target.value})} name="contact-email" className="contact-message" placeholder="Enter your message"></textarea>
                 </div>
               </div>
               <input type="submit" name="contact-submit" value="Submit" className="contact-submit"></input>
