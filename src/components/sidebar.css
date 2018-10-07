@@ -16,17 +16,12 @@
     box-shadow: 0 1px 5px rgba(190,190,190,0.7);
 }
 
-.sidebar .menu-button-top {
-    z-index: 100000;
-    width: 12%;
-    order: 0;
-    position: fixed;
-    top: 0;
-    align-self: flex-start;
+.steph {
+    order: 1;
 }
 
-.sidebar .x-top {
-    display: none;
+.letterx {
+    order: 2;
 }
 
 .sidebar a {
@@ -42,13 +37,13 @@
 }
 
 .navbar {
+    font-weight: bold;
     align-items: flex-end;
     height: 100vh;
     width: 30vw;
     position: fixed;
     justify-content: center;
     left: 55vw;
-    top: -15vh;
 }
 
 .navbar a {
@@ -72,7 +67,8 @@
 
 .top-text {
     font-family: 'Quicksand', sans-serif;
-    order: 2;
+    font-weight: bolder;
+    order: 1;
     min-height: 5%;
     font-size: 3em;
     margin-right: 2.2vw;
@@ -81,20 +77,22 @@
     color: white;
 }
 
-.menu-bg {
-    background-color: rgba(56,205,255,0.9);
-    border-radius: 50%;
-    width: 100%;
-    height: 6vh;
-    padding: 1vh;
-    margin-top: 1vh;
+.menu-button {
+    z-index: 100000;
+    width: 10%;
+    order: 0;
+    position: fixed;
+    top: 0;
+    align-self: flex-start;
     margin-left: 6vw;
-    z-index: 0;
+    margin-top: 2vh;
+    border-radius: 50%;
+    padding: 10px;
 }
 
-.menu-button {
-    margin-top: 2vh !important;
-    margin-left: 4vh;
+.under {
+    background-color: rgba(56,205,255,0.9);
+    z-index: 1;
 }
 
 .image {
@@ -121,7 +119,7 @@
     }
     .navbar {
         left: 33vw;
-        margin-top: 10vh;
+        margin-top: 5vh;
         align-items: center;
     }
     .navbar a {
@@ -135,10 +133,12 @@
         margin-right: 4vw;
         margin-bottom: 5vh;
     }
-    .sidebar .menu-button-top {
-        width: 5.5%;
-        margin-top: 6vh;
-        margin-left: 4vw;
+    .image {
+        width: 15%;
+        margin-left: 0;
+    }
+    .menu-button {
+        width: 6%;
     }
 }
 

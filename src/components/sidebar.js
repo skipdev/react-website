@@ -17,7 +17,6 @@ class Sidebar extends Component {
   render() {
     const { pageTitle } = this.props
     const { letterX } = this.props
-    const { pageImg } = this.props
     return (
         <div className="sidebar flex">
           <div id="particles-js">
@@ -140,12 +139,12 @@ class Sidebar extends Component {
               }}
             />
           </div>
-          <div className="menu-bg menu-button-top"></div>
-            <img alt="menu icon" className="menu-button-top menu-button" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
-            <br></br>
+            <img alt="menu icon" className="menu-button" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
+            <img alt="menu icon" className="menu-button under" id="menu-button" src={require('../images/menu-icon.png')} onClick={this.toggleMenu}></img>
+          <br></br>
           <div className="flex row stephyx">
-            <p className="top-text">{pageTitle}</p>
-            <p className="top-text"><b>{letterX}</b></p>
+            <p className="top-text steph">{pageTitle}</p>
+            <p className="top-text letterx"><b>{letterX}</b></p>
           </div>
           <br></br>
           <div className={`menu-div-top ${this.state.sidebarOpen ? '' : 'hidden'}`} id='menu-div' onClick={this.toggleMenu}>
@@ -168,6 +167,7 @@ class Sidebar extends Component {
             <div className="navbar flex column">
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
+              <Link to="/skills">Skills</Link>
               <Link to="/experience">Experience</Link>
               <Link to="/work">Work</Link>
               <Link to="/contact">Contact</Link>

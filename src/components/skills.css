@@ -1,0 +1,80 @@
+.CircularProgressbar {
+    width: 100%;
+    position: relative;
+}
+
+.CircularProgressbar-wrapper {
+    position: relative;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.CircularProgressbar-img {
+    position: absolute;
+    width: 20vw;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #38cdff;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #38cdff;
+    font-size: .7em;
+    dominant-baseline: middle;
+    text-anchor: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+    fill: transparent;
+}
+
+.skills-table {
+    padding-left: 3.5vw;
+}
+
+.skills-table td {
+    padding: 2% !important;
+}
+
+.devicon-amazonwebservices-original {
+    z-index: 100;
+}
+
+.desktop-ver {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .mobile-ver {
+        display: none;
+    }
+
+    .desktop-ver {
+        display: block;
+    }
+
+    .skills-table {
+        padding-left: 12vw;
+    }
+
+    .skills-table td {
+        padding: 2% !important;
+    }
+
+    .CircularProgressbar-wrapper {
+        width: 15vw;
+    }
+
+    .CircularProgressbar-img {
+        width: 7vw;
+    }
+}

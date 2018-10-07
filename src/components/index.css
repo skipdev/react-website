@@ -44,3 +44,17 @@
         margin-top: -1.5vh;
     }
 }
+
+@media only screen and (min-width: 700px) {
+    .index-name {
+        margin-top: 15vh;
+        margin-bottom: 10vh;
+        font-size: 1.5em;
+    }
+
+    .index-x {
+        margin-top: 3vh;
+        margin-right: 3vw;
+    }
+}
+

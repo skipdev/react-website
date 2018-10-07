@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 hr {
@@ -20,6 +20,10 @@ i {
 
 i:hover {
     color: #e1e1e1;
+}
+
+.center {
+    text-align: center;
 }
 
 .hidden {
