@@ -31,9 +31,9 @@ class ContactPage extends Component {
             <form onSubmit={this.submitForm} className="contact-form-all flex column">
               <div className="contact-form flex">
                 <div className="left flex column">
-                  <span className="contact-label">Name</span>
+                  <span className="contact-label contact-label-name">Name</span>
                   <input onKeyUp={(event) => this.setState({name: event.target.value})} type="text" name="contact-name" className="contact-name" placeholder="Enter your name"></input>
-                  <span className="contact-label">Email</span>
+                  <span className="contact-label contact-label-email">Email</span>
                   <input onKeyUp={(event) => this.setState({email: event.target.value})} type="text" name="contact-email" className="contact-email" placeholder="Enter your email"></input>
                 </div>
                 <div className="right flex column">
