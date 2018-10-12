@@ -1,6 +1,5 @@
-.contact-label {
-    text-align: left;
-    font-weight: bold;
+.form-input {
+    margin-bottom: 3vh;
 }
 
 h1 {
@@ -43,20 +42,6 @@ textarea {
     padding-right: 20vw;
 }
 
-.contact-label {
-    margin-bottom: 2vh;
-    margin-left: .5vw;
-    color: #0f0f0f;
-}
-
-.contact-label-message {
-    margin-left: 2.5vw;
-}
-
-.left {
-    margin-top: .5vh;
-}
-
 .contact-submit {
     margin-top: 5vh;
     margin-bottom: -2vh;
@@ -71,22 +56,9 @@ textarea {
     textarea {
         margin-left: 0;
     }
-    .contact-label-message {
-        margin-left: .5vw;
-    }
 }
 
 @media only screen and (min-width: 700px) {
-
-    .contact-label-name {
-        margin-top: -.5vh;
-    }
-
-    .contact-label-email {
-        margin-top: -.6vh;
-        margin-bottom: 2vh;
-    }
-
     .contact-submit {
         background-color: #e1e1e1;
         width: 10%;
