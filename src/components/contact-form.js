@@ -83,9 +83,13 @@ class Contact extends React.Component {
       <div className="contact" id="contact">
         <div className="filter">
           <form className="form contact-form-all flex column" onSubmit={this._handleSubmit} id="formContact">
-            <input placeholder="Name" className="form-input contact-name" id="formName" type="text" name="formName" value={this.state.contactName} onChange={this._handleChangeName} required/>
-            <input placeholder="Email" className="form-input contact-email" id="formEmail" type="email" name="formEmail" value={this.state.contactEmail} onChange={this._handleChangeEml} required/>
-            <textarea placeholder="Message" className="form-input contact-message"  id="formMsg" name="formMsg" rows="8" cols="40" value={this.state.contactMessage} onChange={this._handleChangeMsg} required></textarea>
+            <div className="contact-desktop">
+              <div className="contact-left">
+                <input placeholder="Name" className="form-input contact-name" id="formName" type="text" name="formName" value={this.state.contactName} onChange={this._handleChangeName} required/>
+                <input placeholder="Email" className="form-input contact-email" id="formEmail" type="email" name="formEmail" value={this.state.contactEmail} onChange={this._handleChangeEml} required/>
+              </div>
+              <textarea placeholder="Message" className="form-input contact-message"  id="formMsg" name="formMsg" rows="8" cols="40" value={this.state.contactMessage} onChange={this._handleChangeMsg} required></textarea>
+            </div>
             <input type="submit" value="Submit" className="contact-submit" id="btn-submit" />
           </form>
         </div>
