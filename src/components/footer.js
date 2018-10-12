@@ -21,7 +21,6 @@ class Footer extends Component {
           </div>
         </div>
         <span className="mobile-circle">
-          .
         </span>
       </div>
     )
