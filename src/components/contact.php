@@ -1,30 +1,41 @@
 <?php
-// Email address verification
-function isEmail($email) {
-	return filter_var($email, FILTER_VALIDATE_EMAIL);
-}
-if($_POST) {
-    // Enter the email where you want to receive the message
-    $emailTo = 'stephyx.web@gmail.com';
-    $name = addslashes(trim($_POST['name']));
-    $clientEmail = addslashes(trim($_POST['email']));
-    $message = addslashes(trim($_POST['message']));
-    $array = array('nameMessage' => '', 'emailMessage' => '', 'messageMessage' => '');
 
-    if($name == '') {
-        $array['nameMessage'] = 'Empty name!';
-    }
-    if(!isEmail($clientEmail)) {
-        $array['emailMessage'] = 'Invalid email!';
-    }
-    if($message == '') {
-        $array['messageMessage'] = 'Empty message!';
-    }
-    if($name != '' && isEmail($clientEmail) && $message != '') {
-        // Send email
-		$headers = "From: " . $name . " - " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, "StephyX Contact Form", $message, $headers);
-    }
-    echo json_encode($array);
-}
+  // trim() function strips any white space from beginning and end of the string
+  $name = filter_var(trim($_POST["form_name"]), FILTER_SANITIZE_NAME);
+  $email = filter_var(trim($_POST["form_email"]), FILTER_SANITIZE_EMAIL);
+  //  strip_tags() function strips all HTML and PHP tags from a variable.
+  $message = strip_tags($_POST["form_msg"]);
+
+  // Check that data was sent to the mailer.
+  if ( empty($message) OR !filter_var($name, FILTER_VALIDATE_NAME) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    // Set a 400 (bad request) response code and exit.
+    http_response_code(400);
+    echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+    exit;
+  }
+
+  // Set the recipient email address.
+  $recipient = "stephyx.web@gmail.com";
+  // Set the email subject.
+  $subject = "Contact form submission from: $email";
+
+  // Build the email content.
+  $body .= "Name: $name\n\n";
+  $body .= "Email: $email\n\n";
+  $body .= "Message: \n$message\n";
+
+  // success
+  $success = mail($recipient, $subject, $body, "From:" . $email);
+
+  // Send the email.
+  if ($success) {
+    // Set a 200 (okay) response code.
+    http_response_code(200);
+    echo "Thank You! Your message has been sent.";
+  } else {
+    // Set a 500 (internal server error) response code.
+    http_response_code(500);
+    echo "Oops! Something went wrong and we couldn’t send your message.";
+  }
+
 ?>
