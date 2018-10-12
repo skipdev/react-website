@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="all flex column">
         <div className="footer flex">
-          <p class="name">Stephy</p>
+          <p className="name">Stephy</p>
           <img className="x" alt="letter x" src={require('../images/x.png')}></img>
           <p className="copyright"> © 2018 All rights reserved.</p>
           <div className='mobile flex'>
