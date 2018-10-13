@@ -1,33 +1,38 @@
 import { fetch } from 'whatwg-fetch'
 
-const api = async (path, body, method = 'GET') => {
-	const response = await fetch(path, {
-		body: JSON.stringify(body),
-		method,
-		headers: new Headers({'content-type': 'application/x-www-form-urlencoded'}), // Change to application/json
-	})
+export const contact = async (name, email, message) => {
+  const response =  await api('./contact.php', {
+    name,
+    email,
+    message,
+  }, 'POST')
 
-	return response
+  return new ApiResponse(response)
 }
 
-export const contact = async (name, email, message) => {
-	const response =  await api('./contact.php', {
-		name,
-		email,
-		message,
-	}, 'POST')
+exports.onClientEntry = () => {
+//keep this
+}
 
-	return new ApiResponse(response)
+const api = async (path, body, method = 'GET') => {
+  const response = await fetch(path, {
+    body: JSON.stringify(body),
+    method,
+    headers: new Headers({'content-type': 'application/x-www-form-urlencoded'}), // Change to application/json
+  })
+
+  return response
 }
 
 class ApiResponse {
-	response
+  response
 
-	constructor(response) {
-		this.response = response
-	}
+  constructor(response) {
+    this.response = response
+  }
 
-	get ok() {
-		return this.response.headers.status === 200
-	}
+  get ok() {
+    return this.response.headers.status === 200
+  }
 }
+

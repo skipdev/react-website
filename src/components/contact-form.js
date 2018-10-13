@@ -55,9 +55,9 @@ class Contact extends React.Component {
 	    console.log('success', response.response)
     } else {
       this.setState({
-		    contactName: 'danger',
-		    contactEmail: 'danger',
-		    contactMessage: '<h1>Sorry</h1><p>Please email stephyx.web@gmail.com</p>'
+		    contactName: 'Oops!',
+		    contactEmail: 'Oops!',
+		    contactMessage: 'Please email stephyx.web@gmail.com'
 	    });
 
 	    console.log(response.response)
