@@ -54,6 +54,7 @@
 }
 
 .menu-div-top {
+    transition: all .2s ease-in-out;
     background-color: black;
     height: 102vh;
     z-index: 1000;

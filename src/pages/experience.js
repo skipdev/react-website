@@ -13,7 +13,7 @@ class ExperiencePage extends Component {
         <div className='wrapper flex column'>
           <div className="flex column sidebar-img">
           <Sidebar pageTitle={'Experience'}/>
-          <img className="contact-img image" alt="contact-img" src={require('../images/profile_picture.png')}></img>
+          <img className="contact-img image grow" alt="contact-img" src={require('../images/profile_picture.png')}></img>
           </div>
           <div className="main">
           <div id="top">

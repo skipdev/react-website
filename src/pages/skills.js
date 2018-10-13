@@ -20,7 +20,7 @@ class SkillsPage extends Component {
         <div className='wrapper flex column'>
           <div className="flex column sidebar-img">
             <Sidebar pageTitle={'Skills'}/>
-            <img className="contact-img image" alt="profile picture" src={require('../images/profile_picture.png')}></img>
+            <img className="contact-img image grow" alt="profile picture" src={require('../images/profile_picture.png')}></img>
           </div>
           <br></br>
           <br></br>
