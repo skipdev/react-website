@@ -138,7 +138,11 @@
         margin-left: 0;
     }
     .menu-button {
-        width: 6%;
+        width: 4%;
+        margin-left: 4vw;
+    }
+    .letterx {
+        margin-top: 3vh;
     }
 }
 

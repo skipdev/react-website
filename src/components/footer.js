@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
+import IsScrolling from 'react-is-scrolling'
 
 class Footer extends Component {
 
   render() {
+    const { isScrollingDown, isScrollingUp } = this.props;
     return (
+      <div>
+        <div>
+          { isScrollingDown &&
+          console.log('down')
+          }
+
+          { isScrollingUp &&
+          console.log('up')
+          }
+        </div>
       <div className="all flex column">
-        <div className="footer flex">
+        <div className="footer flex" id='footer-js'>
           <p class="name">Stephy</p>
           <img className="x" alt="letter x" src={require('../images/x.png')}></img>
           <p className="copyright"> © 2018 All rights reserved.</p>
@@ -23,9 +35,10 @@ class Footer extends Component {
         <span className="mobile-circle">
         </span>
       </div>
+      </div>
     )
   }
 }
 
-export default Footer;
+export default IsScrolling(Footer);
 

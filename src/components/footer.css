@@ -98,6 +98,10 @@
     .footer ul li {
         margin-left: 1vw;
     }
+    .footer {
+        max-height: 8vh;
+        position: fixed;
+    }
 }
 
 @media only screen and (max-width: 700px) {
