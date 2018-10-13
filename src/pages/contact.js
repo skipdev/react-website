@@ -16,7 +16,9 @@ class ContactPage extends Component {
           <div className="main">
           <h1 class="contact-title dark">Get in touch!</h1>
           <div id="about">
+
             <ContactForm/>
+
             {/*<form action="../components/contact.php" className="contact-form-all flex column" method="post">*/}
               {/*<div className="contact-form flex">*/}
                 {/*<div className="left flex column">*/}

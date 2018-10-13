@@ -42,6 +42,7 @@ class Layout extends React.Component {
                   integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
                   crossOrigin="anonymous"></link>
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script async src="//static.zotabox.com/1/9/19d0eafd48bbfc4fb82c66a138af1f79/widgets.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"></link>
